@@ -14,7 +14,7 @@ data <- subset(NEI, NEI$fips == "24510" & NEI$type == "ON-ROAD")
 data2 <- tapply(data$Emissions, data$year, sum)
 
 # Create the plot
-png("Plot5".png)
+png("plot5.png")
 barplot(data2, main="Plot 5", xlab="Year", ylab="Emissions", col="black")
 
 # Close the PNG file
